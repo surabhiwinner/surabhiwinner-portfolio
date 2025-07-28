@@ -2,7 +2,7 @@
 
 export default function About() {
   const stats = [
-    { number: '10+', label: 'Projects Completed' },
+    { number: '7+', label: 'Projects Completed' },
     { number: '1+', label: 'Years Experience' },
     { number: '5+', label: 'Technologies Used' },
     { number: '100%', label: 'Passion & Commitment' },
