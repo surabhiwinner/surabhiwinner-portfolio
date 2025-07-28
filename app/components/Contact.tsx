@@ -12,7 +12,8 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -27,7 +28,8 @@ export default function Contact() {
     }, 1000);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
